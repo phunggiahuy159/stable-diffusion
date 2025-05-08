@@ -1,10 +1,5 @@
 
-This guide helps you run [Kohya's Stable Diffusion trainers](https://github.com/kohya-ss/sd-scripts) on [Runpod.io](https://www.runpod.io) using a simple and fast setup.
 
-> ✅ **Runpod-Only Instructions**  
-> ⚠️ Local and Docker setups are not covered
-
----
 
 ## 🚀 Quick Start (Pre-Built Template)
 
@@ -59,5 +54,5 @@ Follow this 4-step workflow to train effectively using Kohya GUI:
 - Click **Start Training** and monitor progress through the GUI.
 
 ---
-## for diffuser training, change the path to the data in notebook and directly training 
+## for diffuser training, change the path to the data in notebook and directly train your model
 
