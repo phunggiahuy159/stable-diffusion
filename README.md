@@ -40,7 +40,7 @@ If you prefer a manual setup:
 
 ---
 
-## 📌 Recommended Training Flow
+## 📌 Recommended Training Flow for dreambooth lora
 
 Follow this 4-step workflow to train effectively using Kohya GUI:
 
@@ -54,9 +54,7 @@ Follow this 4-step workflow to train effectively using Kohya GUI:
 
 ### 3. Set Training Parameters
 - In the same **LoRA** tab:
-  - Set **Max Steps** to `2600`
-  - Set **LoRA Rank** to `128`
-  - Leave other hyperparameters at their **default values** for best compatibility.
+  - Modify yours hyperparameters
 
 ### 4. Start Training
 - Click **Start Training** and monitor progress through the GUI.
