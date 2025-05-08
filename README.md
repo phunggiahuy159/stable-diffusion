@@ -32,6 +32,23 @@ If you prefer not to use the template:
    cd /workspace
    git clone --recursive https://github.com/bmaltais/kohya_ss.git
    wget -O Realistic_sdxl.safetensors "https://huggingface.co/SG161222/RealVisXL_V5.0/resolve/main/RealVisXL_V5.0_fp16.safetensors?download=true"
-   
    cd kohya_ss
    ./setup-runpod.sh
+   ./gui.sh --share --headless
+3. Open GUI and started training
+### recommend flow
+Follow this workflow to effectively train using Kohya GUI:
+1.Caption Your Images
+   Navigate to the Utilities tab.
+   Use the auto-captioning tool to label your training images.
+2.Prepare Dataset via LoRA Tab
+   Go to the LoRA tab.
+   Organize and configure your dataset for training.
+3.Set Training Parameters
+   In the same LoRA tab:
+   Set Max Steps to 2600
+   Set LoRA Rank to 128
+   Leave other hyperparameters at their default values for best compatibility.
+4.Start Training
+Once everything is set, click Start Training and monitor the progress.
+
