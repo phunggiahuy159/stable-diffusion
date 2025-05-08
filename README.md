@@ -2,31 +2,30 @@
 
 This guide helps you run [Kohya's Stable Diffusion trainers](https://github.com/kohya-ss/sd-scripts) on [Runpod.io](https://www.runpod.io) using a simple and fast setup.
 
-> ✅ **Runpod-Only** instructions  
-> ⚠️ Local and Docker setups are not covered here
+> ✅ **Runpod-Only Instructions**  
+> ⚠️ Local and Docker setups are not covered
 
 ---
 
-## 🚀 Quick Start (Pre-built Template)
+## 🚀 Quick Start (Pre-Built Template)
 
 The fastest way to launch Kohya GUI on Runpod:
 
-1. Click this Runpod template:  
+1. Click the template below:  
    👉 [Launch Kohya GUI on Runpod](https://runpod.io/gsc?template=ya6013lj5a&ref=w18gds2n)
-
-2. Choose your GPU (e.g. A100, H100, 3090).
+2. Select a GPU (e.g., A100, H100, 3090).
 3. Click **Deploy**.
-4. Wait for the pod to start.
+4. Wait for the pod to initialize.
 5. Access the GUI via the exposed port (default: `7860`).
 
 ---
 
 ## 🛠 Manual Installation on Runpod
 
-If you prefer not to use the template:
+If you prefer a manual setup:
 
-1. Start a **PyTorch 2.2.0** Runpod container.
-2. Open a terminal and run, download your model if you want, for example:
+1. Start a **PyTorch 2.2.0** container on Runpod.
+2. Open the terminal and run the following:
 
    ```bash
    cd /workspace
@@ -35,20 +34,32 @@ If you prefer not to use the template:
    cd kohya_ss
    ./setup-runpod.sh
    ./gui.sh --share --headless
-3. Open GUI and started training
-### recommend flow
-Follow this workflow to effectively train using Kohya GUI:
-1.Caption Your Images
-   Navigate to the Utilities tab.
-   Use the auto-captioning tool to label your training images.
-2.Prepare Dataset via LoRA Tab
-   Go to the LoRA tab.
-   Organize and configure your dataset for training.
-3.Set Training Parameters
-   In the same LoRA tab:
-   Set Max Steps to 2600
-   Set LoRA Rank to 128
-   Leave other hyperparameters at their default values for best compatibility.
-4.Start Training
-Once everything is set, click Start Training and monitor the progress.
+   ```
+
+3. Access the GUI via the shared link or exposed port.
+
+---
+
+## 📌 Recommended Training Flow
+
+Follow this 4-step workflow to train effectively using Kohya GUI:
+
+### 1. Caption Your Images
+- Go to the **Utilities** tab.
+- Use the auto-captioning tool to label your training images.
+
+### 2. Prepare Dataset (LoRA Tab)
+- Switch to the **LoRA** tab.
+- Load and organize your training dataset.
+
+### 3. Set Training Parameters
+- In the same **LoRA** tab:
+  - Set **Max Steps** to `2600`
+  - Set **LoRA Rank** to `128`
+  - Leave other hyperparameters at their **default values** for best compatibility.
+
+### 4. Start Training
+- Click **Start Training** and monitor progress through the GUI.
+
+---
 
