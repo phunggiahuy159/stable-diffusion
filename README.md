@@ -1,4 +1,3 @@
-# Kohya GUI - Runpod Only
 
 This guide helps you run [Kohya's Stable Diffusion trainers](https://github.com/kohya-ss/sd-scripts) on [Runpod.io](https://www.runpod.io) using a simple and fast setup.
 
@@ -55,6 +54,7 @@ Follow this 4-step workflow to train effectively using Kohya GUI:
 ### 3. Set Training Parameters
 - In the same **LoRA** tab:
   - Modify yours hyperparameters
+## for diffuser training, change the path to the data in notebook and directly training 
 
 ### 4. Start Training
 - Click **Start Training** and monitor progress through the GUI.
